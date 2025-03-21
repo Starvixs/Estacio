@@ -138,9 +138,9 @@
         printf("%s = %.2f + %.2f = %.2f\n", ndc2, jogador2A, jogador2B, soma2);
 
         if (soma1 > soma2){
-            printf("Carta 1 ganhou!!\n");
+            printf("%s ganhou!!\n", ndc1);
         } else if (soma2 > soma1) {
-            printf("Carta 2 ganhou!!\n");
+            printf("%s ganhou!!\n", ndc2);
         } else {
             printf("Houve um empate!!");
         }
