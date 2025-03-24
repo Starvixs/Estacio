@@ -8,7 +8,7 @@ int main() {
                "1. Torre\n"
                "2. Bispo\n"
                "3. Rainha\n"
-               "4. Sair do jogo\n");
+               "4. Cavalo\n");
         scanf("%d", &escolha); //Leitura da peça que deseja escolher
 
         switch (escolha) { //Menu de escolha pra qual peça deseja escolher
@@ -32,13 +32,19 @@ int main() {
                 break;
 
             case 4:
-                printf("Saindo do jogo..."); 
+                for (int cavalo = 0; cavalo < 2; cavalo++){
+                    printf("Cima\n");
+                }
+                int j = 0;
+                while (j < 1){
+                    printf("Esquerda\n");
+                    j++;
+                }
+                printf("\n");
+                
                 break;
+                } //Fecha o Switch
 
-            default:printf("Erro: Numero não identificado!\n"); break;
+            } while (escolha != 0);
+ 
         }
-
-    } while (escolha != 4);
-
-    return 0;
-}
